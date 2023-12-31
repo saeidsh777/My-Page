@@ -19,4 +19,30 @@
     -ms-transition: none;
     -o-transition: none;
   }
+
+  .header-top-bar {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: var(--black);
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 2rem !important;
+  }
+
+  .navbar-link {
+    color: var(--white);
+  }
+
+  .navbar-link.active::before {
+    content: none;
+  }
+  .navbar-link.active {
+    color: var(--green1) !important;
+  }
 }
