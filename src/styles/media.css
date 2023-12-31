@@ -1,0 +1,22 @@
+@media only screen and (max-width: 1199px) {
+  .contact-me-btn-container {
+    background-color: var(--white);
+    width: fit-content;
+  }
+  .contact-me-btn-container:hover .contact-me-btn {
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+
+  .contact-me-btn {
+    color: var(--black);
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+  }
+}
