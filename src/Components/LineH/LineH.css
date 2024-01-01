@@ -1,0 +1,38 @@
+.line-container{
+height: 30px;
+}
+.line-h {
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray);
+  position: relative;
+}
+.line-h::after,.line-h::before {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: var(--green1);
+  content: "";
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.line-h::before{
+    left: -0.3rem;
+    top: -.11rem;
+
+}
+.line-h::after {
+  right: -0.3rem;
+  top: -.11rem;
+}
+
+.line-title{
+    position: absolute;
+    background-color: var(--white);
+    padding: .3rem 1rem;
+    top: -.2rem;
+    font-weight: 700;
+}
