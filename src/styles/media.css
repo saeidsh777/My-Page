@@ -67,6 +67,11 @@
   .banner-title {
     font-size: 4rem;
   }
+
+  .title-1 {
+    font-size: 1.3rem;
+    font-family: outfit-700;
+  }
 }
 
 @media only screen and (min-width: 991px) {

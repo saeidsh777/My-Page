@@ -30,4 +30,16 @@
   letter-spacing: 0.2rem;
 }
 
+.title-1{
+    font-size: 2.5rem;
+    font-family: outfit-700;
+}
 
+.container-c{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mt-6{
+    margin-top: 6rem;
+}
