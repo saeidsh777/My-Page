@@ -1,0 +1,12 @@
+.skill-title{
+    font-family: outfit-500;
+    font-size: .8rem;
+}
+
+.progress{
+    --bs-progress-height: .3rem !important;
+}
+
+.progress-bar{
+    background-color: var(--green1) !important;
+}

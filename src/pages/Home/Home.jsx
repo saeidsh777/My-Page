@@ -3,11 +3,11 @@ import React from "react";
 import "./Home.css";
 import { Quote } from "react-bootstrap-icons";
 import LineH from "../../Components/LineH/LineH";
+import SkillBox from "../../Components/SkillBox/SkillBox";
 export default function Home() {
   return (
     <section className="home scroll-y col-12 col-lg-8">
       <div className="container-c">
-        
         {/* Start Banner */}
         <section className="home-banner d-flex flex-column align-items-center">
           <div className="line-v"></div>
@@ -19,7 +19,7 @@ export default function Home() {
               Saeid <br /> Shojaei
             </h1>
             <span className="mt-5 d-block text-center label-1">
-              UI/UX DESIGNER
+              WEB DEVELOPER
             </span>
             <div className="banner-img-container mt-4">
               <img
@@ -52,7 +52,33 @@ export default function Home() {
         </section>
         {/* End About */}
 
-        <LineH title="Services"/>
+        <LineH title="Hard Skills" />
+
+        {/* Start Skills */}
+        <section className="skills">
+          <div className="row">
+            <div className="col-12 col-lg-6 mb-4">
+              <SkillBox title="HTML" progress={95} />
+            </div>
+            <div className="col-12 col-lg-6 mb-4">
+              <SkillBox title="CSS" progress={95} />
+            </div>
+            <div className="col-12 col-lg-6 mb-4">
+              <SkillBox title="JavaScript" progress={90} />
+            </div>
+            <div className="col-12 col-lg-6 mb-4">
+              <SkillBox title="React JS" progress={85} />
+            </div>
+            <div className="col-12 col-lg-6 mb-4">
+              <SkillBox title="Redux" progress={50} />
+            </div>
+          </div>
+        </section>
+        {/* End Skills */}
+
+        <LineH title="Hard Skills" />
+
+        
       </div>
     </section>
   );
