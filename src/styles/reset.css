@@ -1,15 +1,16 @@
-*,::after,::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box !important;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
 }
 
-ul{
-    list-style: none !important;
+ul {
+  list-style: none !important;
 }
 
-a{
-    color: var(--black);
-    text-decoration: none !important;
+a {
+  color: var(--black);
+  text-decoration: none !important;
 }
-

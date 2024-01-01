@@ -1,25 +1,25 @@
 .white-t {
-    color: var(--white);
+  color: var(--white);
 }
 .black-t {
-    color: var(--black);
+  color: var(--black);
 }
 .green1-t {
-    color: var(--green1);
+  color: var(--green1);
 }
 .gray-t {
-    color: var(--gray);
+  color: var(--gray);
 }
 
 .white-b {
-    background-color: var(--white);
+  background-color: var(--white);
 }
 .black-b {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 .green1-b {
-    background-color: var(--green1);
+  background-color: var(--green1);
 }
 .gray-b {
-    background-color: var(--gray);
+  background-color: var(--gray);
 }
