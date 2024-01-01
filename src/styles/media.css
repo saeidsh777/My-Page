@@ -63,4 +63,15 @@
   .navbar-link.active {
     color: var(--green1) !important;
   }
+
+  .banner-title {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .scroll-y {
+    overflow-y: scroll;
+    height: calc(100vh - 90px);
+  }
 }

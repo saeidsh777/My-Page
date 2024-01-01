@@ -5,6 +5,7 @@ import SideBar from "./Components/SideBar/SideBar";
 
 import "./App.css";
 import { useState } from "react";
+import MyImg from "./Components/MyImg/MyImg";
 
 function App() {
   const router = useRoutes(routes);
@@ -13,9 +14,12 @@ function App() {
   return (
     <>
       <Header setPathName={setPathName} />
-      <main className="d-xl-flex">
+      <main className="d-lg-flex">
         <SideBar pathName={pathName} />
-        {router}
+        <div className="row g-0 w-100">
+          {router}
+          <MyImg />
+        </div>
       </main>
     </>
   );

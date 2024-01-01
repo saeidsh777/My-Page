@@ -23,3 +23,11 @@
 .gray-b {
   background-color: var(--gray);
 }
+
+.label-1 {
+  font-family: outfit-500;
+  font-size: 0.75rem;
+  letter-spacing: 0.2rem;
+}
+
+
