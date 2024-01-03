@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Github, Linkedin, Telegram, Whatsapp } from "react-bootstrap-icons";
+import {
+  EnvelopeFill,
+  Github,
+  Linkedin,
+  Telegram,
+} from "react-bootstrap-icons";
 
 import "./SideBar.css";
 
@@ -12,23 +17,26 @@ export default function SideBar({ pathName }) {
 
         <ul className="d-flex flex-column gap-3 m-0 p-0">
           <li>
-            <Link to="/">
-              <Linkedin className="social-media-icon"/>
+            <Link
+              to="https://linkedin.com/in/saeid-shojaei-a8724a233"
+              target="_blank"
+            >
+              <Linkedin className="social-media-icon" />
             </Link>
           </li>
           <li>
-            <Link to="/">
-              <Github className="social-media-icon"/>
+            <Link to="https://github.com/saeidsh777" target="_blank">
+              <Github className="social-media-icon" />
             </Link>
           </li>
           <li>
-            <Link to="/">
-              <Telegram className="social-media-icon"/>
+            <Link to="https://t.me/saeidshojaei777" target="_blank">
+              <Telegram className="social-media-icon" />
             </Link>
           </li>
           <li>
-            <Link to="/">
-              <Whatsapp className="social-media-icon"/>
+            <Link to="mailto:saeidshojaei71@gmail.com">
+              <EnvelopeFill className="social-media-icon" />
             </Link>
           </li>
         </ul>

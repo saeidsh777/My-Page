@@ -4,6 +4,7 @@ import "./Home.css";
 import { Quote } from "react-bootstrap-icons";
 import LineH from "../../Components/LineH/LineH";
 import SkillBox from "../../Components/SkillBox/SkillBox";
+import ProjectBox from "../../Components/ProjectBox/ProjectBox";
 export default function Home() {
   return (
     <section className="home scroll-y col-12 col-lg-8">
@@ -19,7 +20,8 @@ export default function Home() {
               Saeid <br /> Shojaei
             </h1>
             <span className="mt-5 d-block text-center label-1">
-              WEB DEVELOPER
+              FRONT-END DEVELOPER <br />
+              (React JS)
             </span>
             <div className="banner-img-container mt-4">
               <img
@@ -36,7 +38,7 @@ export default function Home() {
         <section className="about mt-6">
           <h2 className="text-center title-1">
             Hi! My name is Saeid,
-            <br /> i’m Web Developer based in <br /> Tehran
+            <br /> i’m Web Developer based in <br /> TEHRAN / IRAN
           </h2>
           <div className="mt-4 quote">
             <Quote className="white-t" />
@@ -58,10 +60,13 @@ export default function Home() {
         <section className="skills">
           <div className="row">
             <div className="col-12 col-lg-6 mb-4">
-              <SkillBox title="HTML" progress={95} />
+              <SkillBox title="HTML" progress={98} />
             </div>
             <div className="col-12 col-lg-6 mb-4">
-              <SkillBox title="CSS" progress={95} />
+              <SkillBox title="CSS" progress={98} />
+            </div>
+            <div className="col-12 col-lg-6 mb-4">
+              <SkillBox title="Bootstrap" progress={98} />
             </div>
             <div className="col-12 col-lg-6 mb-4">
               <SkillBox title="JavaScript" progress={90} />
@@ -76,9 +81,46 @@ export default function Home() {
         </section>
         {/* End Skills */}
 
-        <LineH title="Hard Skills" />
+        <LineH title="Projects" />
 
-        
+        {/* Start Projects */}
+        <section className="projects" id="projects">
+          <div className="row">
+            <div className="col-12 col-lg-6 mb-4">
+              <ProjectBox
+                srcImg="/images/job.png"
+                title="Job Project"
+                label={["React", "Bootstrap"]}
+                urlProject="https://marvelous-dusk-e0c0b1.netlify.app/"
+              />
+            </div>
+            <div className="col-12 col-lg-6 mb-4">
+              <ProjectBox
+                srcImg="/images/pet.png"
+                title="Pet Project"
+                label={["React", "Bootstrap"]}
+                urlProject="https://superb-vacherin-7935a5.netlify.app/"
+              />
+            </div>
+            <div className="col-12 col-lg-6 mb-4">
+              <ProjectBox
+                srcImg="/images/pet.png"
+                title="Pet Project"
+                label={["React", "Bootstrap"]}
+                urlProject="https://superb-vacherin-7935a5.netlify.app/"
+              />
+            </div>
+            <div className="col-12 col-lg-6 mb-4">
+              <ProjectBox
+                srcImg="/images/job.png"
+                title="Job Project"
+                label={["React", "Bootstrap"]}
+                urlProject="https://marvelous-dusk-e0c0b1.netlify.app/"
+              />
+            </div>
+          </div>
+        </section>
+        {/* End Projects */}
       </div>
     </section>
   );
