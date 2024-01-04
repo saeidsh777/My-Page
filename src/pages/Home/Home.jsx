@@ -1,10 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import "./Home.css";
-import { Quote } from "react-bootstrap-icons";
 import LineH from "../../Components/LineH/LineH";
 import SkillBox from "../../Components/SkillBox/SkillBox";
 import ProjectBox from "../../Components/ProjectBox/ProjectBox";
+import Footer from "../../Footer/Footer";
+import { Quote } from "react-bootstrap-icons";
+
+import "./Home.css";
 export default function Home() {
   return (
     <section className="home scroll-y col-12 col-lg-8">
@@ -35,7 +37,7 @@ export default function Home() {
         {/* End Banner */}
 
         {/* Start About */}
-        <section className="about mt-6">
+        <section className="about mt-6" id="about">
           <h2 className="text-center title-1">
             Hi! My name is Saeid,
             <br /> i’m Web Developer based in <br /> TEHRAN / IRAN
@@ -122,6 +124,9 @@ export default function Home() {
         </section>
         {/* End Projects */}
       </div>
+      {/* Start Footer */}
+      <Footer />
+      {/* End Footer */}
     </section>
   );
 }

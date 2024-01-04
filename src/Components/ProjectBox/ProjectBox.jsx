@@ -1,7 +1,9 @@
 import React from "react";
-import "./ProjectBox.css";
 import { ArrowRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
+
+import "./ProjectBox.css";
+
 export default function ProjectBox({ srcImg, title, label, urlProject }) {
   return (
     <div className="project-box">
