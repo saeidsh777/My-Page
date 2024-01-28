@@ -30,15 +30,6 @@ export default function Header({ setPathName }) {
                 HOME
               </NavLink>
             </li>
-            <li className="navbar-item">
-              <NavLink
-                className={`navbar-link`}
-                to="/contact"
-                onClick={() => setPathName("CONTACT")}
-              >
-                CONTACT
-              </NavLink>
-            </li>
           </ul>
         </nav>
       </div>

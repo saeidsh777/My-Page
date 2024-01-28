@@ -5,7 +5,6 @@ import { routes } from "./route";
 import SideBar from "./Components/SideBar/SideBar";
 import MyImg from "./Components/MyImg/MyImg";
 
-
 import "./App.css";
 
 function App() {

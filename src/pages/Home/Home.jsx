@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+import React, { useEffect } from "react";
 import LineH from "../../Components/LineH/LineH";
 import SkillBox from "../../Components/SkillBox/SkillBox";
 import ProjectBox from "../../Components/ProjectBox/ProjectBox";
@@ -8,6 +8,20 @@ import { Quote } from "react-bootstrap-icons";
 
 import "./Home.css";
 export default function Home() {
+  let auth = {
+    grant_type: "client_credentials",
+    client_id: "nEFigIuL76osO9t1xFtAzfrAURN7yDV3",
+    client_secret: "yN2f03oK3WMLx9XZ",
+  };
+  useEffect(() => {
+    fetch("https://test.api.amadeus.com/v1/security/oauth2/token", {
+      method:"POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: JSON.stringify(auth),
+    }).then((res) => console.log(res));
+  }, []);
   return (
     <section className="home scroll-y col-12 col-lg-8">
       <div className="container-c">
@@ -35,7 +49,6 @@ export default function Home() {
           </div>
         </section>
         {/* End Banner */}
-
         {/* Start About */}
         <section className="about mt-6" id="about">
           <h2 className="text-center title-1">
@@ -55,9 +68,7 @@ export default function Home() {
           </p>
         </section>
         {/* End About */}
-
         <LineH title="Hard Skills" />
-
         {/* Start Skills */}
         <section className="skills">
           <div className="row">
@@ -82,9 +93,7 @@ export default function Home() {
           </div>
         </section>
         {/* End Skills */}
-
         <LineH title="Projects" />
-
         {/* Start Projects */}
         <section className="projects" id="projects">
           <div className="row">
